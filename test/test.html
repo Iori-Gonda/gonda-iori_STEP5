@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Step5テスト</title>
+    <style>
+        .highlighted {
+            background-color: pink;
+            color:white;
+            font-weight: bold;
+            border: 2px solid purple;
+            padding: 10px;
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <!--入力欄-->
+        <input type="text" id="input" name="input" placeholder="ここに入力してください"><br>
+        <!-- 表示ボタン -->
+        <button type="button" id="outputButton">表示</button><br>
+        <!-- 背景色変えるボタン -->
+        <button type="button" id="changeBackgroundColor">背景色を変更</button>
+
+        <!-- 表示エリア -->
+        <p id="output"></p>
+    </form>
+
+    <p>追加回数: <span id="addCount">0</span></p>
+
+    <table border="1" id="myTable" style="width: 100%; margin-top: 10px;">
+        <thead>
+            <tr>
+                <th>入力内容</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>        
+    </table>
+
+    <script src="test.js"></script>
+</body>
+</html>
