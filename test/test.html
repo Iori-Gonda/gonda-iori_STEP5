@@ -21,19 +21,23 @@
 </head>
 <body>
     <form id="myForm">
-        <!--入力欄-->
+        <!-- 設問1-a：1.入力欄 -->
         <input type="text" id="input" name="input" placeholder="ここに入力してください"><br>
-        <!-- 表示ボタン -->
+        <!-- 設問1-a：2.表示ボタン -->
         <button type="button" id="outputButton">表示</button><br>
-        <!-- 背景色変えるボタン -->
-        <button type="button" id="changeBackgroundColor">背景色を変更</button>
+        <!-- 設問2：背景色変えるボタン -->
+        <button type="button" id="changeBackgroundColor">背景色を変更</button><br>
+        <!-- 設問3：ハイライト切り替えの表示ボタン -->
+        <button type="button" id="highlightButton">表示</button><br>
 
-        <!-- 表示エリア -->
+        <!-- 設問1-a：3.表示エリア -->
         <p id="output"></p>
     </form>
 
+    <!-- 設問4-b -->
     <p>追加回数: <span id="addCount">0</span></p>
 
+    <!-- 設問4-a -->
     <table border="1" id="myTable" style="width: 100%; margin-top: 10px;">
         <thead>
             <tr>
@@ -43,6 +47,17 @@
         </thead>
         <tbody>
         </tbody>        
+    </table>
+
+    <!-- 設問6：テーブル（最大3件まで -->
+    <table border="1" id="historyTable" style="width: 100%; margin-top: 10px;">
+        <thead>
+            <tr>
+                <th>過去の入力履歴</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
     </table>
 
     <script src="test.js"></script>
